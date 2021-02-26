@@ -10,6 +10,7 @@
             <Button x:Name="press" Text="Пресс" Clicked="press_Clicked"/>
             <Button x:Name="legs" Text="Ноги" Clicked="legs_Clicked"/>
             <Button x:Name="buttocks" Text="Ягодицы" Clicked="buttocks_Clicked"/>
+            <Button x:Name="own_training" Text="Составить свою тренировку" Clicked="own_training_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

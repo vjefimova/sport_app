@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sport_app.Exercises.exercisesPress1">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15">
+                <Label Text="Махи с согнутой ногой" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Image Source="press1.gif" IsAnimationPlaying="true"/>
+                <Label Text="Во время выполнения этого упражнения основная нагрузка направлена на косые мышцы живота."/>
+                <Label Text="Лягте на пол, руки заведите за голову, ноги согните в коленях. Стопы должны упираться в пол. Выполните скручивание, во время которого правый локоть тянется за левое колено к середине бедра, а колено стремится к локтю. Во время выполнения упражнения старайтесь поднять верхнюю часть тела так, чтобы лопатки оторвались от пола. Поясница должна быть прижата к полу. Не прижимайте подбородок к шее и не тяните себя вверх с помощью рук. При скручивании выполните выдох, в исходном положении — вдох."/>
+                <Label x:Name="timer" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button x:Name="startTimer" Text="Запустить таймер" Clicked="startTimer_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

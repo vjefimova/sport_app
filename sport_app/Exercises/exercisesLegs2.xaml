@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sport_app.Exercises.exercisesLegs2">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15">
+                <Label Text="Боковые приседания на месте" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Image Source="vypad.gif" IsAnimationPlaying="true"/>
+                <Label Text="Поставьте ноги как для приседаний сумо, но носки не разворачивайте в стороны, руки сложите у груди. Согните правую ногу в колене и отведите таз назад, чтобы опуститься в боковой выпад. Вернитесь в исходное положение и снова повторите выпад вправо. После всех повторений поменяйте ногу. Простое базовое упражнение для ног прокачает бедра, укрепляя внутреннюю сторону, которая часто находится в списке проблемных зон."/>
+                <Label x:Name="timer" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button x:Name="startTimer" Text="Запустить таймер" Clicked="startTimer_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

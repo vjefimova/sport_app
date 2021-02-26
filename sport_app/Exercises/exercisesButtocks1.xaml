@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sport_app.Exercises.exercisesButtocks1">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15">
+                <Label Text="Выпады назад" FontSize="Title" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Image Source="Vypady_nazad.gif" IsAnimationPlaying="true"/>
+                <Label Text="Из положения стоя сделайте широкий шаг назад и опуститесь в выпад до параллели с полом. Возвратитесь в начальную позицию и повторите другой ногой. Делайте выпады поочередно каждой ногой, при этом следите, чтобы колени сгибались под прямым углом и не выступали за носки. Важно делать шаги точно назад, сохраняя ритм и баланс."/>
+                <Label x:Name="timer" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button x:Name="startTimer" Text="Запустить таймер" Clicked="startTimer_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

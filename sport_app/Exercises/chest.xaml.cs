@@ -12,9 +12,36 @@ namespace sport_app.Exercises
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class chest : ContentPage
     {
+        public List<exercises> exercise { get; set; }
+
         public chest()
         {
             InitializeComponent();
+            exercise = new List<exercises>
+            {
+                new exercises {Title="Отжимания от пола", ImagePath="otzimania.png" },
+                new exercises {Title="Разведение гантелей лежа", ImagePath="razvedeniegantelei.png" }
+             };
+            this.BindingContext = this;
+        }
+
+        public class exercises
+        {
+            public string Title { get; set; }
+            public string ImagePath { get; set; }
+        }
+
+        private async void exercisesList_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            exercises selectedExercise = e.Item as exercises;
+            if (selectedExercise.Title.ToString() == "Отжимания от пола")
+            {
+                await Navigation.PushAsync(new exercisesChest1());
+            }
+            if (selectedExercise.Title.ToString() == "Разведение гантелей лежа")
+            {
+                await Navigation.PushAsync(new exercisesChest2());
+            }
         }
     }
 }

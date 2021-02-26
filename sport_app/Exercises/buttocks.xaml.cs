@@ -12,17 +12,35 @@ namespace sport_app.Exercises
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class buttocks : ContentPage
     {
-        public string[] exercise { get; set; }
+        public List<exercises> exercise { get; set; }
         public buttocks()
         {
             InitializeComponent();
-            exercise = new string[] { "Приседания", "Выпады", "Поднимание ягодиц из положения лежа" };
+            exercise = new List<exercises>
+            {
+                new exercises {Title="Приседания", ImagePath="prisedania.png" },
+                new exercises {Title="Выпады назад", ImagePath="vypad2.png" }
+             };
             this.BindingContext = this;
         }
 
-        private void exercisesList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        public class exercises
         {
+            public string Title { get; set; }
+            public string ImagePath { get; set; }
+        }
 
+        private async void exercisesList_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            exercises selectedExercise = e.Item as exercises;
+            if (selectedExercise.Title.ToString() == "Приседания")
+            {
+                await Navigation.PushAsync(new exercisesLegs1());
+            }
+            if (selectedExercise.Title.ToString() == "Выпады назад")
+            {
+                await Navigation.PushAsync(new exercisesButtocks1());
+            }
         }
     }
 }

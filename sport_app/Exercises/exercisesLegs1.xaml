@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sport_app.Exercises.exercisesLegs1">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15">
+                <Label Text="Приседания" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Image Source="Prisedanie.gif" IsAnimationPlaying="true"/>
+                <Label Text="Поставьте ноги на ширину плеч, руки сложите у груди. Согните ноги в коленях, отводя таз назад, чтобы выполнить классическое приседание. Приседайте до параллели бедер с полом. Колени не выводите за носки, спину не сгибайте, смотрите прямо перед собой. Приседания считаются одним из лучших упражнений на бедра и ягодицы, которое прорабатывает весь спектр ягодичных мышц и к тому же задействует пресс."/>
+                <Label x:Name="timer" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button x:Name="startTimer" Text="Запустить таймер" Clicked="startTimer_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

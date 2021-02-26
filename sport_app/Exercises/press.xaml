@@ -4,9 +4,20 @@
              x:Class="sport_app.Exercises.press">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="label" Text="Упражнения на пресс" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center" />
+            <ListView x:Name="exercisesList"
+              HasUnevenRows="True"
+              ItemsSource="{Binding exercise}"
+              ItemTapped="exercisesList_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell
+                        ImageSource="{Binding ImagePath}"
+                        Text="{Binding Title}"
+                        />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

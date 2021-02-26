@@ -31,5 +31,22 @@ namespace sport_app.Exercises
             public string Title { get; set; }
             public string ImagePath { get; set; }
         }
+
+        private async void exercisesList_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            exercises selectedExercise = e.Item as exercises;
+            if (selectedExercise.Title.ToString() == "Обратные отжимания на скамье")
+            {
+                await Navigation.PushAsync(new exercisesHands1());
+            }
+            if (selectedExercise.Title.ToString() == "Алмазные отжимания")
+            {
+                await Navigation.PushAsync(new exercisesHands2());
+            }
+            if (selectedExercise.Title.ToString() == "Разворот в планке на предплечье")
+            {
+                await Navigation.PushAsync(new exercisesHands3());
+            }
+        }
     }
 }

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sport_app.Exercises.exercisesPress2">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15">
+                <Label Text="Планка «пила»" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Image Source="press2.gif" IsAnimationPlaying="true"/>
+                <Label Text="Во время выполнения этого упражнения в работу включаются мышцы кора (прямая и поперечные мышцы живота, разгибатель спины, трапециевидная мышца, бицепсы и грудные мышцы), ягодицы и мышцы ног (бёдра и икры)."/>
+                <Label Text="Выполнение. Встаньте в планку с упором на предплечья. Локти должны быть расположены ровно под плечами, живот втянут (пупок подтягивается к копчику), спина ровная (прогибов в пояснице быть не должно). В этом положении раскачивайтесь с небольшой амплитудой. При движении вперёд плечи должны оказаться перед локтями, а при движении назад быть за локтями. Следите за тем, чтобы спина с ногами постоянно образовывали прямую линию (без прогибов или, наоборот, дуги в пояснице)."/>
+                <Label x:Name="timer" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button x:Name="startTimer" Text="Запустить таймер" Clicked="startTimer_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

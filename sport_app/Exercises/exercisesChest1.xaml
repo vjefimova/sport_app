@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sport_app.Exercises.exercisesChest1">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <Label Text="Отжимания от пола" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Image Source="chest1.jpg"/>
+            <Label Text="Отжимания — ключевое анатомическое упражнение для мышц груди. Если вы хотите накачать грудь, вам прежде всего необходимо научиться правильно отжиматься, чтобы уметь чувствовать грудные мышцы в работе. Однако отметим, что отжимания обладают крайне ограниченным ресурсом для роста груди, поскольку они не позволяют работать с дополнительным весом."/>
+            <Label x:Name="timer" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Button x:Name="startTimer" Text="Запустить таймер" Clicked="startTimer_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
