@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sport_app.Exercises.hands">
+    <StackLayout>
+        <Label Text="Упражнения на руки" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Label Text="{Binding Source={x:Reference Name=exercisesList}, Path=SelectedItem.Title}"
+            FontSize="Large" />
+        <ListView x:Name="exercisesList"
+              HasUnevenRows="True"
+              ItemsSource="{Binding exercise}" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell
+                        ImageSource="{Binding ImagePath}"
+                        Text="{Binding Title}"
+                        />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

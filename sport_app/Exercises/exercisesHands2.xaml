@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sport_app.Exercises.exercisesHands2">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <Label Text="Алмазные отжимания" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Image Source="exercisesHand2.jpg"/>
+            <Label Text="Этот вид отжиманий наиболее сильно загружает трицепс из-за узкой постановки рук. Поставьте руки так, чтобы соединились указательные и большие пальцы. Опустите плечи, вытяните тело в одну линию от плеч до стоп."/>
+            <Label Text="Опустите вниз и выжмите себя наверх, сохраняя корпус ровным. Старайтесь не прогибаться в пояснице, для этого напрягайте пресс."/>
+            <Label x:Name="timer" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Button x:Name="startTimer" Text="Запустить таймер" Clicked="startTimer_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

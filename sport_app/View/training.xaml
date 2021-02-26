@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sport_app.View.training"
+             Title="Упражнения">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="hands" Clicked="hands_Clicked" Text="Руки"/>
+            <Button x:Name="chest" Text="Грудь" Clicked="chest_Clicked"/>
+            <Button x:Name="press" Text="Пресс" Clicked="press_Clicked"/>
+            <Button x:Name="legs" Text="Ноги" Clicked="legs_Clicked"/>
+            <Button x:Name="buttocks" Text="Ягодицы" Clicked="buttocks_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sport_app.Exercises.exercisesHands1">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <Label Text="Обратные отжимания на скамье" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Image Source="exercisesHand1.jpg"/>
+            <Label Text="Это упражнение подойдёт для любого уровня подготовки. Поставьте руки на скамью позади тела, опустите плечи. Согните локти, уходя вниз до параллели плеч с полом, а затем выжмите себя наверх. Ноги можете согнуть в коленях или выпрямить. Последнее сложнее."/>
+            <Label x:Name="timer" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Button x:Name="startTimer" Text="Запустить таймер" Clicked="startTimer_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
