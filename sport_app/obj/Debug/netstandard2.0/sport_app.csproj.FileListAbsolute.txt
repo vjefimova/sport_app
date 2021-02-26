@@ -29,3 +29,4 @@ C:\Users\opilane\source\repos\Jefimova\sport_app\sport_app\obj\Debug\netstandard
 C:\Users\opilane\source\repos\Jefimova\sport_app\sport_app\obj\Debug\netstandard2.0\Exercises\exercisesLegs1.xaml.g.cs
 C:\Users\opilane\source\repos\Jefimova\sport_app\sport_app\obj\Debug\netstandard2.0\Exercises\exercisesLegs2.xaml.g.cs
 C:\Users\opilane\source\repos\Jefimova\sport_app\sport_app\obj\Debug\netstandard2.0\Exercises\exercisesButtocks1.xaml.g.cs
+C:\Users\opilane\source\repos\Jefimova\sport_app\sport_app\obj\Debug\netstandard2.0\Training\ownTraining.xaml.g.cs

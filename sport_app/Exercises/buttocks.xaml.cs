@@ -24,12 +24,6 @@ namespace sport_app.Exercises
             this.BindingContext = this;
         }
 
-        public class exercises
-        {
-            public string Title { get; set; }
-            public string ImagePath { get; set; }
-        }
-
         private async void exercisesList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             exercises selectedExercise = e.Item as exercises;

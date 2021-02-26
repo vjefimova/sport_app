@@ -2,11 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="sport_app.Training.ownTraining">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <ScrollView>
+            <StackLayout Orientation="Vertical">
+                <Label Text="Мои упражнения" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center" />
+            <ListView x:Name="exercisesList"
+                      HasUnevenRows="True"
+                      ItemsSource="{Binding exercise}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell
+                            ImageSource="{Binding ImagePath}"
+                            Text="{Binding Title}"
+                            />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>

@@ -42,9 +42,9 @@ namespace sport_app.View
             await Navigation.PushAsync(new Exercises.hands());
         }
 
-        private void own_training_Clicked(object sender, EventArgs e)
+        private async void own_training_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new Training.ownTraining());
         }
     }
 }
