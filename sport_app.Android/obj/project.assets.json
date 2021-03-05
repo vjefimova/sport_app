@@ -1930,24 +1930,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\opilane\\.nuget\\packages\\": {},
+    "C:\\Users\\morgo\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\Jefimova\\sport_app\\sport_app.Android\\sport_app.Android.csproj",
+      "projectUniqueName": "C:\\Users\\morgo\\Source\\Repos\\sport_app\\sport_app.Android\\sport_app.Android.csproj",
       "projectName": "sport_app.Android",
-      "projectPath": "C:\\Users\\opilane\\source\\repos\\Jefimova\\sport_app\\sport_app.Android\\sport_app.Android.csproj",
-      "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opilane\\source\\repos\\Jefimova\\sport_app\\sport_app.Android\\obj\\",
+      "projectPath": "C:\\Users\\morgo\\Source\\Repos\\sport_app\\sport_app.Android\\sport_app.Android.csproj",
+      "packagesPath": "C:\\Users\\morgo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\morgo\\Source\\Repos\\sport_app\\sport_app.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\morgo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1961,8 +1961,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\opilane\\source\\repos\\Jefimova\\sport_app\\sport_app\\sport_app.csproj": {
-              "projectPath": "C:\\Users\\opilane\\source\\repos\\Jefimova\\sport_app\\sport_app\\sport_app.csproj"
+            "C:\\Users\\morgo\\Source\\Repos\\sport_app\\sport_app\\sport_app.csproj": {
+              "projectPath": "C:\\Users\\morgo\\Source\\Repos\\sport_app\\sport_app\\sport_app.csproj"
             }
           }
         }
